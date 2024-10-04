@@ -1,0 +1,62 @@
+.banner {
+  height: 800px; /* Set the height of the banner */
+  color: white;
+  position: relative; /* Positioning for child elements */
+  background-size: cover; /* Ensure the image covers the entire space */
+  background-position: center center; /* Center the image vertically and horizontally */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  transition: background-image 0.3s ease-in-out; /* Smooth transition */
+}
+
+.content {
+  position: absolute; /* Position content relative to the banner */
+  bottom: 50px; /* Space from the bottom */
+  left: 20px; /* Space from the left */
+  padding: 20px; /* Add padding */
+  max-width: 600px; /* Limit width */
+  z-index: 10; /* Ensure content appears above the fade effect */
+}
+
+.title {
+  font-size: 3.5rem; /* Size for title */
+  font-weight: 800; /* Bold title */
+  padding-bottom: 0.5rem; /* Space under title */
+}
+
+.description {
+  font-size: 1rem; /* Standard size for description */
+  line-height: 1.5; /* Increased line height for readability */
+  max-width: 400px; /* Max width for the description */
+}
+
+.banner_buttons {
+  margin-top: 20px; /* Space above the buttons */
+}
+
+.button {
+  color: white; /* Text color */
+  outline: none; /* Remove outline */
+  background-color: #e50914; /* Background color */
+  border: none; /* Remove border */
+  padding: 0.5rem 2rem; /* Padding for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-right: 1rem; /* Space between buttons */
+  font-weight: bolder; /* Bold font */
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.button:hover {
+  background-color: #f40612; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+
+.fade_bottom {
+  height: 16.85rem; /* Height for the fade effect */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%, /* Dark overlay for the fade effect */
+    rgba(0, 0, 0, 0) 100%
+  );
+}

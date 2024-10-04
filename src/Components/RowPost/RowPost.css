@@ -1,0 +1,44 @@
+.row {
+  margin-left: 20px;
+  padding-top: 10px;
+  color: #fff; /* Text color for titles */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+.posters {
+  display: flex; /* Flexbox for horizontal scrolling */
+  padding: 20px; /* Padding around the posters */
+  overflow-x: auto; /* Horizontal scroll */
+  overflow-y: hidden; /* No vertical scroll */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  border-radius: 5px; /* Slightly rounded corners */
+  border: none; /* Ensure no border */
+  outline: none; /* Ensure no outline */
+}
+
+.posters::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.poster {
+  cursor: pointer; /* Pointer cursor for interactivity */
+  max-height: 250px; /* Max height for main posters */
+  margin-right: 10px; /* Space between posters */
+  transition: transform 0.3s ease; /* Smooth transform */
+}
+
+.smallPoster {
+  cursor: pointer; /* Pointer cursor for interactivity */
+  max-height: 150px; /* Max height for small posters */
+  margin-right: 10px; /* Space between small posters */
+  transition: transform 0.3s ease; /* Smooth transform */
+}
+
+/* Scale effect on hover for posters */
+.poster:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.smallPoster:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
